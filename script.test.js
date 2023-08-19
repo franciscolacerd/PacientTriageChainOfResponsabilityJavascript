@@ -7,7 +7,6 @@ describe('control test', () => {
     });
 });
 
-
 describe('heartburn test', () => {
     test('handle-heartburn-define-bracelet-yellow', () => {
       // Arrange  
@@ -25,5 +24,26 @@ describe('heartburn test', () => {
 
       // Assert
       expect(pacient.bracelet).toBe(pacientTriage.entities.bracelet.Yellow);
+    });
+});        
+
+describe('heartattack test', () => {
+    test('handle-heartattack-define-bracelet-red', () => {
+      // Arrange  
+      let pacient = new pacientTriage.entities.pacient('francisco lacerda', 45);
+      const symptoms = [pacientTriage.entities.symptoms.chestPain, 
+                        pacientTriage.entities.symptoms.numbnessInArm];
+      const bloodPressure = new pacientTriage.entities.bloodPressure(120, 80);
+      const temperature = 37.1;
+
+      // Act
+      pacient.addSymptoms(symptoms, bloodPressure, temperature);
+
+      let nurse = new pacientTriage.entities.nurse(new pacientTriage.evaluationChainHandler());
+
+      nurse.evaluateSymptoms(pacient);
+
+      // Assert
+      expect(pacient.bracelet).toBe(pacientTriage.entities.bracelet.Red);
     });
 });        
