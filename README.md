@@ -1,1 +1,1 @@
-# PacientTriageChainOfResponsabilityJavascript
+# Pacient Triage Chain Of Responsability Javascript
