@@ -14,14 +14,14 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 ------
 ## How to run
 
-Clone project
+1. Clone project
 
-Run to install dependencies
+2. Run to install dependencies
 ```npm
 npm i
 ```
 
-Run to start Jest
+3. Run to start Jest
 ```npm
 jest
 ```
