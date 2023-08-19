@@ -12,6 +12,21 @@ In object-oriented design, the chain-of-responsibility pattern is a behavioral d
 https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 
 ------
+## How to run
+
+Clone project
+
+Run to install dependencies
+```npm
+npm i
+```
+
+Run to start Jest
+```npm
+jest
+```
+
+------
 
 
 ## Javascript Implementation
