@@ -31,7 +31,7 @@ jest
 
 ## Javascript Implementation
 
-### 1. Declare Hospital entities 
+### 1. Declare entities 
 
 ```javascript
 const pacientTriage = {};
