@@ -162,7 +162,9 @@ pacientTriage.evaluationChainHandler = class {
     evaluateSymptoms = (pacient) =>{
         this.chain.handleSymptom(pacient);
     };
-};   
+};
+
+module.exports = pacientTriage;
 ```
 
 ### 5. Unit test it (Jest)
