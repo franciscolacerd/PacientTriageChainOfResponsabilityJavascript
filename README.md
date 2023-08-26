@@ -89,7 +89,7 @@ pacientTriage.entities = {
 };
 ```
 
-### 2. Declare the handler interface
+### 2. Declare the handler class
 ```javascript
 pacientTriage.contracts = {
     iSymptomHandler: class {
