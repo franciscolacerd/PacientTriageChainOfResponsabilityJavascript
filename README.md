@@ -23,7 +23,7 @@ npm i
 
 3. Run to start Jest
 ```npm
-jest
+npx jest
 ```
 
 ------
